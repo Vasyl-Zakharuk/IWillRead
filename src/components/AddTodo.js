@@ -10,7 +10,7 @@ export const AddTodo = ({ onSubmit }) => {
             onSubmit(value)
             setValue('')
         } else {
-            Alert.alert('Будь ласка, введіть дані')
+            Alert.alert('Please, enter text')
         }
     }
 
@@ -20,11 +20,11 @@ export const AddTodo = ({ onSubmit }) => {
                 style={styles.input}
                 onChangeText={text => setValue(text)}
                 value={value}
-                placeholder='Введіть текст для читання...'
+                placeholder='Enter text to read...'
                 autoCorrect={false}
                 autoCapitalize='none'
             />
-            <Button title='Додати' onPress={pressHandler} />
+            <Button title='Add' onPress={pressHandler} />
         </View>
     )
 }
